@@ -1,0 +1,142 @@
+
+<section id="header">
+    <div class="container">
+  <div layout="row">
+
+    <div flex class="header-top flex-20"><mat-icon>notifications </mat-icon>    <sup>2</sup> </div>
+    <div flex class="header-top logo flex-50">Book-app   </div>
+      <div flex class="header-top flex-30"> 
+        <form class="example-form">
+        <mat-form-field appearance="outline">
+          <mat-label>Search Kindle  </mat-label>
+          <input matInput placeholder="" />
+          <mat-icon matSuffix>search</mat-icon> 
+        </mat-form-field>
+      </form>
+    </div>
+   
+  </div>
+    </div>
+</section>
+
+<section id="second-header">
+
+
+    <span class="filter-download left">      <mat-icon>home</mat-icon>  </span>
+    <span class="filter-download right">      <mat-icon>import_export
+      </mat-icon>  </span>
+      <div flex class="flex-100">
+  <mat-tab-group mat-align-tabs="center" animationDuration="0ms">
+    
+    <mat-tab label="All">
+        <section id="books">
+            <mat-grid-list *ngIf="viewMobile" cols="3" md-gutter="1em" rowHeight="180px" [gutterSize]="'10px'"> 
+              <mat-grid-tile style="background: url(assets/images/book3.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"></mat-grid-tile>
+              <mat-grid-tile style="background: url(assets/images/book5.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"></mat-grid-tile>
+              <mat-grid-tile style="background: url(assets/images/book2.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"></mat-grid-tile>
+              <mat-grid-tile style="background: url(assets/images/book.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"></mat-grid-tile>
+            <mat-grid-tile style="background: url(assets/images/book1.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"></mat-grid-tile>
+            <mat-grid-tile style="background: url(assets/images/book.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"></mat-grid-tile>
+            <mat-grid-tile style="background: url(assets/images/book2.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"></mat-grid-tile>
+            <mat-grid-tile style="background: url(assets/images/book5.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"></mat-grid-tile>
+            <mat-grid-tile style="background: url(assets/images/book3.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"></mat-grid-tile>
+            <mat-grid-tile style="background: url(assets/images/book5.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"></mat-grid-tile>
+            <mat-grid-tile style="background: url(assets/images/book2.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"></mat-grid-tile>>
+            </mat-grid-list>
+          
+            <!-- <mat-grid-list *ngIf="!viewMobile" cols="4"  rowHeight="1:1" [gutterSize]="'10px'"> 
+                <mat-grid-tile><img src="assets/images/book1.jpg"></mat-grid-tile>
+                <mat-grid-tile><img src="assets/images/book2.jpg"></mat-grid-tile>
+                <mat-grid-tile><img src="assets/images/book1.jpg"></mat-grid-tile>
+                <mat-grid-tile><img src="assets/images/book1.jpg"></mat-grid-tile>
+                <mat-grid-tile><img src="assets/images/book2.jpg"></mat-grid-tile>
+                <mat-grid-tile><img src="assets/images/book1.jpg"></mat-grid-tile>
+                <mat-grid-tile><img src="assets/images/book2.jpg"></mat-grid-tile>
+                <mat-grid-tile><img src="assets/images/book2.jpg"></mat-grid-tile>
+                <mat-grid-tile><img src="assets/images/book2.jpg"></mat-grid-tile>
+              </mat-grid-list> -->
+
+             <mat-grid-list *ngIf="!viewMobile" cols="5" rowHeight="3:5" [gutterSize]="'10px'">
+                <mat-grid-tile style="background: url(assets/images/book3.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"></mat-grid-tile>
+                <mat-grid-tile style="background: url(assets/images/book5.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"></mat-grid-tile>
+                <mat-grid-tile style="background: url(assets/images/book2.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"></mat-grid-tile>
+                <mat-grid-tile style="background: url(assets/images/book.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"></mat-grid-tile>
+              <mat-grid-tile style="background: url(assets/images/book1.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"></mat-grid-tile>
+              <mat-grid-tile style="background: url(assets/images/book.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"></mat-grid-tile>
+              <mat-grid-tile style="background: url(assets/images/book2.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"></mat-grid-tile>
+              <mat-grid-tile style="background: url(assets/images/book5.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"></mat-grid-tile>
+              <mat-grid-tile style="background: url(assets/images/book3.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"></mat-grid-tile>
+              <mat-grid-tile style="background: url(assets/images/book5.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"></mat-grid-tile>
+              <mat-grid-tile style="background: url(assets/images/book2.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"></mat-grid-tile>
+           
+            </mat-grid-list> 
+
+
+          </section> </mat-tab>
+
+
+          <span class="filter-download">      <mat-icon>home</mat-icon>  </span>
+    <mat-tab label="Downloaded">
+        <section id="books">
+            <mat-grid-list *ngIf="viewMobile" cols="3" md-gutter="1em" rowHeight="180px" [gutterSize]="'10px'"> 
+                <mat-grid-tile style="background: url(assets/images/book2.jpg);background-position: center;background-size: cover;"></mat-grid-tile>
+                <mat-grid-tile style="background: url(assets/images/book1.jpg);background-position: center;background-size: cover;"></mat-grid-tile>
+                <mat-grid-tile style="background: url(assets/images/book1.jpg);background-position: center;background-size: cover;"></mat-grid-tile>
+                <mat-grid-tile style="background: url(assets/images/book2.jpg);background-position: center;background-size: cover;"></mat-grid-tile>
+                <mat-grid-tile style="background: url(assets/images/book1.jpg);background-position: center;background-size: cover;"></mat-grid-tile>
+                <mat-grid-tile style="background: url(assets/images/book2.jpg);background-position: center;background-size: cover;"></mat-grid-tile>
+                <mat-grid-tile style="background: url(assets/images/book2.jpg);background-position: center;background-size: cover;"></mat-grid-tile>
+                <mat-grid-tile style="background: url(assets/images/book1.jpg);background-position: center;background-size: cover;"></mat-grid-tile>
+                <mat-grid-tile style="background: url(assets/images/book1.jpg);background-position: center;background-size: cover;"></mat-grid-tile>
+                <mat-grid-tile style="background: url(assets/images/book2.jpg);background-position: center;background-size: cover;"></mat-grid-tile>
+            </mat-grid-list>
+      
+           
+             <mat-grid-list *ngIf="!viewMobile" cols="4" rowHeight="430px" [gutterSize]="'40px'">
+           
+                <mat-grid-tile style="background: url(assets/images/book2.jpg);background-position: center;background-size: cover;"></mat-grid-tile>
+              <mat-grid-tile style="background: url(assets/images/book1.jpg);background-position: center;background-size: cover;"></mat-grid-tile>
+              <mat-grid-tile style="background: url(assets/images/book1.jpg);background-position: center;background-size: cover;"></mat-grid-tile>
+              <mat-grid-tile style="background: url(assets/images/book2.jpg);background-position: center;background-size: cover;"></mat-grid-tile>
+              <mat-grid-tile style="background: url(assets/images/book1.jpg);background-position: center;background-size: cover;"></mat-grid-tile>
+              <mat-grid-tile style="background: url(assets/images/book2.jpg);background-position: center;background-size: cover;"></mat-grid-tile>
+              <mat-grid-tile style="background: url(assets/images/book2.jpg);background-position: center;background-size: cover;"></mat-grid-tile>
+              <mat-grid-tile style="background: url(assets/images/book1.jpg);background-position: center;background-size: cover;"></mat-grid-tile>
+              <mat-grid-tile style="background: url(assets/images/book1.jpg);background-position: center;background-size: cover;"></mat-grid-tile>
+              <mat-grid-tile style="background: url(assets/images/book2.jpg);background-position: center;background-size: cover;"></mat-grid-tile>
+            </mat-grid-list> 
+
+
+          </section> </mat-tab>
+  </mat-tab-group>
+</div>
+
+
+</section>
+<section id="space-blank"></section>
+
+
+
+<section id="footer">
+  <div class="flex-20">  
+  <mat-icon style="color:#0874c2">import_contacts</mat-icon>  
+  <p style="color:#0874c2">Library</p>
+</div>
+<div class="flex-20">  
+    <mat-icon>people</mat-icon>  
+    <p>community</p>
+  </div>
+  <div class="flex-20">  
+     <div class="foter-img">&nbsp; <img src="assets/images/icon.png"></div> 
+    </div>
+    <div class="flex-20">  
+        <mat-icon>local_library</mat-icon>  
+        <p>discover</p>
+      </div>
+      <div class="flex-20">  
+          <mat-icon>format_list_bulleted</mat-icon>  
+          <p>more</p>
+        </div> 
+</section>
+
+

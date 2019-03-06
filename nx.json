@@ -7,5 +7,15 @@
     "tslint.json": "*",
     "nx.json": "*"
   },
-  "projects": {}
+  "projects": {
+    "defaultappa": {
+      "tags": []
+    },
+    "defaultappa-e2e": {
+      "tags": []
+    },
+    "books-dashboard": {
+      "tags": []
+    }
+  }
 }
