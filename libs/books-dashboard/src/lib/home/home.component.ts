@@ -14,7 +14,7 @@ viewMobile: Boolean = false;
       Breakpoints.HandsetLandscape,
       Breakpoints.HandsetPortrait
     ]).subscribe(result => {
-      this.viewMobile = breakpointObserver.isMatched('(max-width: 768px)');
+      this.viewMobile = breakpointObserver.isMatched('(max-width:569px)');
         console.log('screen is', this.viewMobile);
     });
   }
