@@ -1,176 +1,100 @@
 <officeintegrator-header></officeintegrator-header>
-
 <section id="second-header">
   <div class="container filter">
-      <div flex class="header-top flex-20"><span class="filter-download left"> <mat-icon>tune</mat-icon> </span></div>
-   
-        <div flex class="header-top flex-20 right"><span class="filter-download right"><mat-icon>import_export </mat-icon></span></div>
-</div>
+    <div flex class="header-top flex-20">
+      <span class="filter-download left"> <mat-icon>tune</mat-icon> </span>
+    </div>
+
+    <div flex class="header-top flex-20 right">
+      <span class="filter-download right"
+        ><mat-icon>import_export </mat-icon></span
+      >
+    </div>
+  </div>
   <div flex class="flex-100">
     <mat-tab-group mat-align-tabs="center" animationDuration="0ms">
       <mat-tab label="All">
         <section id="books">
-          <mat-grid-list *ngIf="viewMobile" cols="3" md-gutter="1em" rowHeight="3:4" [gutterSize]="'10px'">
-              <mat-grid-tile
-              style="background: url(assets/images/book1.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;">
-              <span class="new-tag">New</span> <p><span>kindel</span> unlimited</p><mat-icon class="check-new">check_circle</mat-icon>
-          </mat-grid-tile>
+          <mat-grid-list
+            cols="3"
+            md-gutter="1em"
+            rowHeight="3:4"
+            [gutterSize]="'10px'"
+            *ngIf="viewMobile"
+          >
             <mat-grid-tile
-              style="background: url(assets/images/book6.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;">
-              <p><span>kindel</span> unlimited</p>
+              *ngFor="let book of bookarray"
+              [style.backgroundImage]="'url(' + book.image + ')'"
+              style="background-position: center;background-size: contain;background-repeat: no-repeat;"
+            >
+              <span class="new-tag">New</span>
+              <p>
+                <span>{{ book.name }}</span> unlimited
+              </p>
+              <mat-icon class="check-new">check_circle</mat-icon>
             </mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book2.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            >  <span class="new-tag">New</span><p><span>kindel</span> unlimited</p><mat-icon class="check-new">check_circle</mat-icon></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book3.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book1.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book4.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book2.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book5.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book3.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book2.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-          
           </mat-grid-list>
 
-
-          <mat-grid-list *ngIf="!viewMobile" cols="5" rowHeight="3:4" [gutterSize]="'20px'">
+          <mat-grid-list
+            *ngIf="!viewMobile"
+            cols="5"
+            rowHeight="3:4"
+            [gutterSize]="'20px'"
+          >
             <mat-grid-tile
-              style="background: url(assets/images/book1.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;">
-              <span class="new-tag">New</span> <p><span>kindel</span> unlimited</p><mat-icon class="check-new">check_circle</mat-icon>
-          </mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book6.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;">
-              <p><span>kindel</span> unlimited</p>
+              *ngFor="let book of bookarray"
+              [style.backgroundImage]="'url(' + book.image + ')'"
+              style="background-position: center;background-size: contain;background-repeat: no-repeat;"
+            >
+              <span class="new-tag">New</span>
+              <p>
+                <span>{{ book.name }}</span> unlimited
+              </p>
+              <mat-icon class="check-new">check_circle</mat-icon>
             </mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book2.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            >  <span class="new-tag">New</span><p><span>kindel</span> unlimited</p><mat-icon class="check-new">check_circle</mat-icon></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book3.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book1.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book4.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book2.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book5.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book3.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book2.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
           </mat-grid-list>
         </section>
       </mat-tab>
 
-
-
-    
       <mat-tab label="Downloaded">
         <section id="books">
-          <mat-grid-list *ngIf="viewMobile" cols="3" md-gutter="1em" rowHeight="3:4" [gutterSize]="'10px'">
-              <mat-grid-tile
-              style="background: url(assets/images/book3.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;">
-            <p><span>kindel</span> unlimited</p>
-          </mat-grid-tile>
+            <mat-grid-list
+            cols="3"
+            md-gutter="1em"
+            rowHeight="3:4"
+            [gutterSize]="'10px'"
+            *ngIf="viewMobile"
+          >
             <mat-grid-tile
-              style="background: url(assets/images/book2.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;">
-              <p><span>kindel</span> unlimited</p>
+              *ngFor="let book of bookarray"
+              [style.backgroundImage]="'url(' + book.image + ')'"
+              style="background-position: center;background-size: contain;background-repeat: no-repeat;"
+            >
+              <span class="new-tag">New</span>
+              <p>
+                <span>{{ book.name }}</span> unlimited
+              </p>
+              <mat-icon class="check-new">check_circle</mat-icon>
             </mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book1.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book2.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book3.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book4.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book5.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book6.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book5.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book6.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-          
           </mat-grid-list>
 
-
-          <mat-grid-list *ngIf="!viewMobile" cols="5" rowHeight="3:4" [gutterSize]="'20px'">
+          <mat-grid-list
+            *ngIf="!viewMobile"
+            cols="5"
+            rowHeight="3:4"
+            [gutterSize]="'20px'"
+          >
             <mat-grid-tile
-              style="background: url(assets/images/book3.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;">
-            <p><span>kindel</span> unlimited</p>
-          </mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book2.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;">
-              <p><span>kindel</span> unlimited</p>
+              *ngFor="let book of bookarray"
+              [style.backgroundImage]="'url(' + book.image + ')'"
+              style="background-position: center;background-size: contain;background-repeat: no-repeat;"
+            >
+              <span class="new-tag">New</span>
+              <p>
+                <span>{{ book.name }}</span> unlimited
+              </p>
+              <mat-icon class="check-new">check_circle</mat-icon>
             </mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book1.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book2.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book3.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book4.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book5.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book6.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book5.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
-            <mat-grid-tile
-              style="background: url(assets/images/book6.jpg);background-position: center;background-size: contain;background-repeat: no-repeat;"
-            > <p><span>kindel</span> unlimited</p></mat-grid-tile>
           </mat-grid-list>
         </section>
       </mat-tab>
