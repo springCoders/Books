@@ -1,17 +1,18 @@
 <officeintegrator-header></officeintegrator-header>
+
 <section id="second-header">
   <div class="container filter">
-    <div flex class="header-top flex-20">
+      <div fxLayout="row">
+    <div fxFlex="20"   fxLayoutAlign="center center" style="z-index: 99;top: 22px;position: relative;">
       <span class="filter-download left"> <mat-icon>tune</mat-icon> </span>
     </div>
-
-    <div flex class="header-top flex-20 right">
-      <span class="filter-download right"
-        ><mat-icon>import_export </mat-icon></span
-      >
+    <div fxFlex="60"   fxLayoutAlign="center center"></div>
+    <div fxFlex="20"   fxLayoutAlign="center center"  style="z-index: 99;top: 22px;position: relative;">
+      <span class="filter-download right"><mat-icon>import_export </mat-icon></span>
+    </div>
     </div>
   </div>
-  <div flex class="flex-100">
+  <div flex class="">
     <mat-tab-group mat-align-tabs="center" animationDuration="0ms">
       <mat-tab label="All">
         <section id="books">
@@ -58,7 +59,7 @@
 
       <mat-tab label="Downloaded">
         <section id="books">
-            <mat-grid-list
+          <mat-grid-list
             cols="3"
             md-gutter="1em"
             rowHeight="3:4"
@@ -99,6 +100,8 @@
         </section>
       </mat-tab>
     </mat-tab-group>
+
+
   </div>
 </section>
 <officeintegrator-footer></officeintegrator-footer>

@@ -1,11 +1,16 @@
 <section id="header">
   <div class="container">
-    <div layout="row">
-      <div flex class="header-top flex-20">
-        <mat-icon>notifications </mat-icon> <sup>2</sup>
-      </div>
-      <div flex class="header-top logo flex-50">Book-app</div>
-      <div flex class="header-top flex-30">
+    <div fxLayout="row">
+      <div fxFlex="20"   fxLayoutAlign="center center" class="one" >
+        <mat-icon matBadge="2" matBadgeColor="warn">notifications </mat-icon> 
+    </div>
+
+    <div fxFlex="50"   fxLayoutAlign="center center" class="two"  fxShow.sm="false"  fxShow.xs="false" fxShow="true"  >
+      <div  class="logo">Book-app</div>
+    </div>
+    
+    <div fxFlex="30%" fxFlex.xl="30%"  fxFlex.xs="80%" fxFlex.sm="80%" class="three" >
+     
         <form class="example-form">
           <mat-form-field class="example-full-width"  appearance="outline">
             <input matInput placeholder="Kindel Search" value="">
@@ -13,6 +18,7 @@
           </mat-form-field>
         </form>
       </div>
+
     </div>
   </div>
 </section>

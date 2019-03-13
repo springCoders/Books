@@ -1,53 +1,9 @@
-.flex-10 {
-  width: 10%;
-}
-.flex-20 {
-  width: 20%;
-}
-.flex-30 {
-  width: 30%;
-}
-.flex-40 {
-  width: 40%;
-}
-.flex-50 {
-  width: 50%;
-}
-.flex-60 {
-  width: 60%;
-}
-.flex-70 {
-  width: 70%;
-}
-.flex-80 {
-  width: 80%;
-}
-.flex-90 {
-  width: 90%;
-}
-.flex-100 {
-  width: 100%;
-}
+
 .container {
   width: 90%;
   margin: 0 auto;
 }
-.header-top {
-  float: left;
-  text-align: center;
-}
-.header-top.logo {
-  padding: 3px 0px;
-  font-size: 30px;
-  font-family: cursive;
-  font-weight: 900;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 1px #383737;
-}
 
-:host /deep/ .mat-form-field-wrapper {
-  padding-bottom: 0;
-}
 :host /deep/ .mat-tab-header,
 .mat-tab-nav-bar {
   border-bottom: 2px solid rgba(183, 178, 178, 0.52);
@@ -57,10 +13,7 @@
   margin-bottom: 20px;
   padding-top: 10px;
 }
-:host /deep/ .mat-form-field-flex {
-  width: 100%;
-  float: right;
-}
+
 :host /deep/ .mat-tab-label-active {
   color: #0072c5 !important;
   /* font-weight: bold; */
@@ -74,23 +27,10 @@
 .mat-tab-nav-bar.mat-primary .mat-ink-bar {
   background-color: #0074c6;
 }
-:host /deep/ .mat-input-element {
-  caret-color: #0072c5;
-  height: 40px;
-  background-color: transparent !important;
-  margin: 6px;
-  width: 100%;
-}
-:host /deep/ .mat-form-field-appearance-outline .mat-form-field-infix {
-  padding: 0px 0px;
-  margin-top: 0px;
-  height: 47px;
-  border: 0;
-  top: 2px;
-}
+
 
 .mat-icon {
-  color: #464646;
+  color: #464646;cursor: pointer;
 }
 
 section#second-header {
@@ -110,15 +50,6 @@ mat-grid-tile {
   background: transparent;
 }
 
-.container.filter .header-top.right {
-  float: right;
-}
-.container.filter .header-top {
-  z-index: 88;
-  margin-top: 21px;
-  position: relative;
-  cursor: pointer;
-}
 .container.filter[_ngcontent-c1] {
   float: left;
   display: block;
@@ -156,10 +87,7 @@ mat-grid-tile.mat-grid-tile p {
     border-radius: 6px;
   }
  
-  .header-top.flex-20 {
-    width: 15%;
-    margin-top: 17px !important;
-  }
+  
   :host /deep/ .mat-tab-header,
   .mat-tab-nav-bar {
     border-bottom: 2px solid rgba(183, 178, 178, 0.52);
@@ -184,17 +112,13 @@ mat-grid-tile.mat-grid-tile p {
     width: 96%;
     margin: 0 auto;
   }
-  .header-top.flex-30 {
-    width: 82%;
-  }
+ 
   .mat-form-field {
     width: 100%;
     float: left;
     margin-top: 4px;
   }
-  .header-top.logo {
-    display: none;
-  }
+  
   span.filter-download.right {
     right: 01pc;
   }

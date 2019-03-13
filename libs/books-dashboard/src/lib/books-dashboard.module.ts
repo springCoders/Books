@@ -10,6 +10,8 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {LayoutModule} from '@angular/cdk/layout';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatBadgeModule} from '@angular/material/badge';
 
 @NgModule({
   imports: [
@@ -17,7 +19,7 @@ import { FooterComponent } from './shared/footer/footer.component';
     MatGridListModule,
     MatIconModule,
     MatFormFieldModule,
-    MatInputModule,MatTabsModule,LayoutModule,
+    MatInputModule,MatTabsModule,LayoutModule,FlexLayoutModule,MatBadgeModule,
 
     RouterModule.forChild([
       { path: '', pathMatch: 'full', component: HomeComponent }
