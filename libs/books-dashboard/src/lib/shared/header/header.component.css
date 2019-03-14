@@ -1,47 +1,9 @@
-
-.container {
-  width: 90%;
-  margin: 0 auto;
-}
-.logo {
-  padding: 3px 0px;
-  font-size: 30px;
-  font-family: cursive;
-  font-weight: 900;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 1px #383737;
-}
-section#header {
-  border-bottom: 1px solid #ddd;
-}
-.mat-form-field {
-  width: 80%;
-  float: left;
-}
-.mat-icon {
-  color: #464646;cursor: pointer;
-}
-:host /deep/  .mat-form-field-wrapper{    padding-bottom: 0;}
-
-:host /deep/ .mat-form-field-outline.ng-star-inserted {
-  background: white;
-  border-radius: 6px;
- 
-}
+.logo {padding: 3px 0px;font-size: 30px;font-family: cursive;font-weight: 900;text-transform: uppercase;text-shadow: 1px 1px 1px #383737;}
+.mat-icon {color: #464646;cursor: pointer;}
+:host /deep/  .mat-form-field-wrapper{padding-bottom: 0;}
+:host /deep/ .mat-form-field-outline.ng-star-inserted {background: white;border-radius: 6px;border-bottom: 1px solid #e0dfdf;}
 @media screen and (min-width: 320px) and (max-width: 990px) {
-  :host /deep/ .mat-form-field-outline.ng-star-inserted {
-    background: #eaeaea;
-    border-radius: 6px;
-  }
-  section#header {
-    background: #fff;
-  }
-  .mat-form-field {
-    width: 100%;
-  }
-  .container {
-    width: 96%;
-    margin: 0 auto;
-  }
- 
+:host /deep/ .mat-form-field-outline.ng-star-inserted { background: #eaeaea;border-radius: 6px;}
+section#header {background: #fff;    border-bottom: 1px solid #e0dfdf;}
+
 }
