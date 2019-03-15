@@ -11,14 +11,11 @@
 .container.filter{height: 0;}
 mat-grid-tile.mat-grid-tile:hover p {display: block !important;}
 mat-grid-tile.mat-grid-tile p span {color: #dc820e;}
+
 mat-grid-tile.mat-grid-tile p {position: absolute;bottom: -10px;font-size: 16px;letter-spacing: 0.9px;background: rgba(17, 12, 12, 0.9019607843137255);width: 100%;padding: 16px 17px;color: #fff;text-align: start;display: none;right: 0;left: 0;
 }
 @media screen and (min-width: 320px) and (max-width: 990px) {
   :host /deep/ .mat-form-field-outline.ng-tns-c3-0.ng-star-inserted {background: #eaeaea;border-radius: 6px;}
-  :host /deep/ .mat-tab-header,
-  .mat-tab-nav-bar {border-bottom: 2px solid rgba(183, 178, 178, 0.52);padding-bottom: 0px;background: #fff;height: 46px;margin-bottom: 11px;padding-top: 5px;}
-  :host /deep/ .mat-tab-label,
-  .mat-tab-link {font-size: 15px;}
   span.filter-download.left { left: 1pc;}
   .mat-form-field-appearance-outline .mat-form-field-wrapper {margin: 10px 0px;}
   .mat-form-field {width: 100%;float: left;margin-top: 4px;}

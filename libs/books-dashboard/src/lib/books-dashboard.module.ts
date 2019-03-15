@@ -13,6 +13,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   imports: [
@@ -20,7 +21,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatGridListModule,
     MatIconModule,
     MatFormFieldModule,
-    MatInputModule,MatTabsModule,LayoutModule,FlexLayoutModule,MatBadgeModule,MatToolbarModule,
+    MatInputModule,MatTabsModule,LayoutModule,FlexLayoutModule,MatBadgeModule,MatToolbarModule,MatMenuModule,
 
     RouterModule.forChild([
       { path: '', pathMatch: 'full', component: HomeComponent }

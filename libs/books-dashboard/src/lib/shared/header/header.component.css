@@ -1,4 +1,4 @@
-.logo {padding: 3px 0px;font-size: 30px;font-family: cursive;font-weight: 900;text-transform: uppercase;text-shadow: 1px 1px 1px #383737;}
+.logo {font-size: 30px;font-family: cursive;font-weight: 900;text-shadow: 1px 1px 1px #383737;}
 .mat-icon {color: #464646;cursor: pointer;}
 :host /deep/  .mat-form-field-wrapper{padding-bottom: 0;}
 :host /deep/ .mat-form-field-outline.ng-star-inserted {background: white;border-radius: 6px;border-bottom: 1px solid #e0dfdf;}

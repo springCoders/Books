@@ -2,14 +2,35 @@
 
 <section id="second-header">
   <div class="container filter">
-      <div fxLayout="row">
-    <div fxFlex="20"   fxLayoutAlign="center center" style="z-index: 99;top: 22px;position: relative;">
-      <span class="filter-download left"> <mat-icon>tune</mat-icon> </span>
-    </div>
-    <div fxFlex="60"   fxLayoutAlign="center center"></div>
-    <div fxFlex="20"   fxLayoutAlign="center center"  style="z-index: 99;top: 22px;position: relative;">
-      <span class="filter-download right"><mat-icon>import_export </mat-icon></span>
-    </div>
+    <div fxLayout="row">
+      <div
+        fxFlex="20"
+        fxLayoutAlign="center center"
+        style="z-index: 99;top: 22px;position: relative;"
+      >
+        <mat-icon [matMenuTriggerFor]="menu">tune</mat-icon>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <mat-icon>dialpad</mat-icon>
+            <span>Short By Name</span>
+          </button>
+
+          <button mat-menu-item>
+            <mat-icon>date_range</mat-icon>
+            <span>Short By Date </span>
+          </button>
+        </mat-menu>
+      </div>
+      <div fxFlex="60" fxLayoutAlign="center center"></div>
+      <div
+        fxFlex="20"
+        fxLayoutAlign="center center"
+        style="z-index: 99;top: 22px;position: relative;"
+      >
+        <span class="filter-download right"
+          ><mat-icon>import_export </mat-icon></span
+        >
+      </div>
     </div>
   </div>
   <div flex class="">
@@ -100,8 +121,6 @@
         </section>
       </mat-tab>
     </mat-tab-group>
-
-
   </div>
 </section>
 <officeintegrator-footer></officeintegrator-footer>
