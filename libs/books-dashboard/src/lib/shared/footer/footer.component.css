@@ -1,10 +1,7 @@
 
 .mat-icon {color: #464646;cursor: pointer;margin: 0 auto;}
-section#footer .text{font-size: 13px;letter-spacing: 0.7px;color: #323232;}
 section#footer {box-shadow: 1px -1px 1px #ddd;width: 100%;padding: 11px 0px 5px;position: fixed;z-index: 88;bottom: 0;background: #fff;}
 section#space-blank {height: 35px;padding:0px;display: block;  }
-.foter-img img {position: absolute;top: -23px;border: 1px solid #ddd;padding: 5px;background: #fff;left: 0;right: 0;text-align: center;margin: 0 auto;}
-@media screen and (min-width: 320px) and (max-width: 990px) {
-section#footer .text {font-size: 9px;}
-.foter-img img {top: -16px;}
-  }
+.foter-img img {position: absolute;top: -16px;border: 1px solid #ddd;padding: 5px;background: #fff;left: 0;right: 0;text-align: center;margin: 0 auto;}
+  .text-six{font-size: 10px;letter-spacing: 0.7px;color: #323232;}
+  .text{font-size: 13px;letter-spacing: 0.7px;color: #323232;}

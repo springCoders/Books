@@ -14,6 +14,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatSortModule} from '@angular/material/sort';
 
 @NgModule({
   imports: [
@@ -21,7 +22,7 @@ import {MatMenuModule} from '@angular/material/menu';
     MatGridListModule,
     MatIconModule,
     MatFormFieldModule,
-    MatInputModule,MatTabsModule,LayoutModule,FlexLayoutModule,MatBadgeModule,MatToolbarModule,MatMenuModule,
+    MatInputModule,MatTabsModule,LayoutModule,FlexLayoutModule,MatBadgeModule,MatToolbarModule,MatMenuModule,MatSortModule,
 
     RouterModule.forChild([
       { path: '', pathMatch: 'full', component: HomeComponent }

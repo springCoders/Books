@@ -1,4 +1,6 @@
-<section id="space-blank"></section>
+<div fxLayout="column" fxFlex="40" fxLayoutAlign="space-evenly center" >
+     
+</div>
 <section id="footer">
   <div fxLayout="row">
     <div fxFlex="20" fxLayout="column">
@@ -7,7 +9,7 @@
           >import_contacts</mat-icon
         >
       </div>
-      <div class="text" fxLayoutAlign="center center" style="color:#0874c2">
+      <div  [ngClass]="['text-six']"  ngClass.gt-xs="text" fxLayoutAlign="center center" style="color:#0874c2">
         LIBRARY
       </div>
     </div>
@@ -16,10 +18,10 @@
       <div fxLayoutAlign="center center">
         <mat-icon class="example-icon">people</mat-icon>
       </div>
-      <div class="text" fxLayoutAlign="center center">COMMUNITY</div>
+      <div  [ngClass]="['text-six']"  ngClass.gt-xs="text" fxLayoutAlign="center center">COMMUNITY</div>
     </div>
     <div fxFlex="20" fxLayoutAlign="center center" class="one">
-      <div class="foter-img">
+      <div [ngClass]="['foter-img']" ngClass.gt-xs="foter-img ,foter-imgsm " >
         &nbsp;
         <img
           fxFlex="2.5"
@@ -34,13 +36,14 @@
       <div fxLayoutAlign="center center">
         <mat-icon class="example-icon">local_library</mat-icon>
       </div>
-      <div class="text" fxLayoutAlign="center center">DISCOVER</div>
+      <div    [ngClass]="['text-six']"  ngClass.gt-xs="text"  fxLayoutAlign="center center">DISCOVER</div>
     </div>
     <div fxFlex="20" fxLayout="column">
       <div fxLayoutAlign="center center">
         <mat-icon class="example-icon">format_list_bulleted</mat-icon>
       </div>
-      <div class="text" fxLayoutAlign="center center">MORE</div>
+      <div   [ngClass]="['text-six']"  ngClass.gt-xs="text" fxLayoutAlign="center center">MORE</div>
     </div>
   </div>
 </section>
+

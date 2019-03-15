@@ -9,7 +9,7 @@
         style="z-index: 99;top: 22px;position: relative;"
       >
         <mat-icon [matMenuTriggerFor]="menu">tune</mat-icon>
-        <mat-menu #menu="matMenu">
+        <mat-menu #menu="matMenu" >
           <button mat-menu-item>
             <mat-icon>dialpad</mat-icon>
             <span>Short By Name</span>
@@ -45,7 +45,7 @@
             *ngIf="viewMobile"
           >
             <mat-grid-tile
-              *ngFor="let book of bookarray"
+              *ngFor="let book of sortedData"
               [style.backgroundImage]="'url(' + book.image + ')'"
               style="background-position: center;background-size: contain;background-repeat: no-repeat;"
             >
